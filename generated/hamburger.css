@@ -1,0 +1,69 @@
+.div-about-menu .menu {
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  z-index: 1000;
+  cursor: pointer;
+  display: block;
+  width: 45px;
+  height: 45px;
+}
+.div-about-menu .menu bun:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 12%;
+  background: white;
+  border-radius: 45px;
+  transition: all 0.5s cubic-bezier(0.5, 0.9, 0, 0.8);
+  top: 10%;
+  right: 0;
+}
+.div-about-menu .menu bun:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 12%;
+  background: white;
+  border-radius: 45px;
+  transition: all 0.5s cubic-bezier(0.5, 0.9, 0, 0.8);
+  bottom: 10%;
+  left: 0;
+}
+.div-about-menu .menu bun burger {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 45px;
+  width: 45px;
+}
+.div-about-menu .menu bun burger:before, .div-about-menu .menu bun burger:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 12%;
+  background: white;
+  border-radius: 45px;
+  transition: all 0.5s cubic-bezier(0.5, 0.9, 0, 0.8);
+}
+.div-about-menu .menu input {
+  display: block;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+.div-about-menu .menu input:checked ~ bun:before, .div-about-menu .menu input:checked ~ bun:after {
+  width: 0;
+}
+.div-about-menu .menu input:checked ~ bun burger:before {
+  transform: rotate(135deg);
+}
+.div-about-menu .menu input:checked ~ bun burger:after {
+  transform: rotate(45deg);
+  box-shadow: 0 0 0 0 #595959;
+}
+
+/*# sourceMappingURL=hamburger.css.map */

@@ -1,0 +1,76 @@
+@media (max-width: 780px) 
+{
+
+
+    //menu bar angepasst
+    $color: white;
+    $size: 30px;
+
+    @mixin pill(){
+    border-radius: $size;
+    }
+
+    .div-about-menu
+    {
+
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+
+
+        .menu
+        {
+            top: 1rem;
+            right: auto;
+            width: $size;
+            height: $size;
+    
+            bun{
+
+                burger{
+
+                    height: $size;
+                    width: $size;
+                }
+            }
+        
+            input
+            {
+                width:$size;
+                height:$size;
+            }
+        }
+    }
+
+    .wrapper
+    {
+        &.active 
+        {
+            main
+            {
+                transform: translate3d(0, 50%, -120px);
+            }
+        }
+
+        .nav-a
+        {
+            &:last-child
+            {
+                margin: 1.5rem 0 0 0 ;
+            }
+            margin: 1.5rem 0 0 0 ;
+            padding: 1rem;
+            &:hover 
+            {   
+                img
+                {
+                    transform: translate(0, 0px);
+                }
+            }
+        }
+
+    }
+
+}
