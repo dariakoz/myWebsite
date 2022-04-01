@@ -1,26 +1,4 @@
 @media (max-width: 780px) {
-  .div-about-menu {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-  }
-  .div-about-menu .menu {
-    top: 1rem;
-    right: auto;
-    width: 30px;
-    height: 30px;
-  }
-  .div-about-menu .menu bun burger {
-    height: 30px;
-    width: 30px;
-  }
-  .div-about-menu .menu input {
-    width: 30px;
-    height: 30px;
-  }
-
   .wrapper.active main {
     transform: translate3d(0, 50%, -120px);
   }
@@ -33,6 +11,24 @@
   }
   .wrapper .nav-a:hover img {
     transform: translate(0, 0px);
+  }
+
+  header {
+    justify-content: space-between;
+  }
+  header .logo2 {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    color: var(--text);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  header .logo {
+    display: none;
   }
 }
 
