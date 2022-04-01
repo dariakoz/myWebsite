@@ -2,7 +2,8 @@
 const menuButton = document.querySelector('#menu-button');
 const wrapper = document.querySelector('#wrapper');
 
-const triggerClass = 'active';
+const wapperTriggerClass = 'active';
+const menuTriggerClass = 'change'
 let navigationState = false;
 
 
@@ -16,13 +17,18 @@ menuButton.addEventListener('click', () => {
 
 const openMenu = () => {
     navigationState = true;
-    wrapper.classList.add(triggerClass);
+    wrapper.classList.add(wapperTriggerClass);
+    menuButton.classList.add(menuTriggerClass)
 };
 
 const closeMenu = () => {
     navigationState = false;
-    wrapper.classList.remove(triggerClass);
+    wrapper.classList.remove(wapperTriggerClass);
+    menuButton.classList.remove(menuTriggerClass)
 };
+
+
+
 
 
 
@@ -44,17 +50,3 @@ const observer = new IntersectionObserver(([entry]) => {
 
 observer.observe(sectionTwo);
 observer.observe(sectionThree);
-
-
-
-
-VanillaTilt.init(document.querySelectorAll(".card"), {
-    max: 25,
-    speed: 400,
-    glare: true,
-    "max-glare": 1
-  });
-
-
-
-    

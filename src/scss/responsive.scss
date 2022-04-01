@@ -10,39 +10,6 @@
     border-radius: $size;
     }
 
-    .div-about-menu
-    {
-
-        position: absolute;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-
-
-        .menu
-        {
-            top: 1rem;
-            right: auto;
-            width: $size;
-            height: $size;
-    
-            bun{
-
-                burger{
-
-                    height: $size;
-                    width: $size;
-                }
-            }
-        
-            input
-            {
-                width:$size;
-                height:$size;
-            }
-        }
-    }
 
     .wrapper
     {
@@ -73,4 +40,87 @@
 
     }
 
+
+
+    header 
+    {
+        justify-content: space-between;
+        .logo2 
+        {
+            padding-top: 1rem;
+            display: flex;
+            justify-content: center;
+            color: var(--text);
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .logo 
+        {
+            display: none;
+        }
+    }
+
+
+    .home {
+        $size: 15rem;
+        flex-direction: column;
+        
+        .profile-image {
+            border-radius: $size;
+            width: $size;
+            height: $size;
+
+            
+            .img-vinzenz {
+                width: $size;
+            }
+        }
+
+        .intro-text {
+            color: white;
+            max-width: 45rem;
+            text-align: center;
+            
+            p {
+                font-size: 1rem;
+
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .about
+    {
+        position: relative;
+        padding: 130px 10vw;
+        color: #fff;
+        height: 100%;
+        min-height: 100vh;
+    
+        h1 {
+            font-size: 6vw;
+            margin-bottom: 2rem;
+        }
+        p {
+            font-size: 5vmin;
+        }
+    }
+
+    .contact {
+        .contact-buttons {
+            .buttons {
+                width: 7.5rem;
+                height: 7.5rem;
+                float: none;
+                padding: 1rem;
+            }
+        }
+    }
 }

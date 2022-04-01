@@ -1,4 +1,4 @@
-
+$Color: rgb(95,0,0);
 
 
 body
@@ -162,7 +162,7 @@ body
             left: 0;
             right: 0;
             z-index: 4;
-            background-color: rgb(95, 0, 0);
+            background-color: $Color;
             width: 100vw;
             height: 100vh;
             transition: 250ms all;

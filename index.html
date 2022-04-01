@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinzenz Geisler</title>
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="generated/navbar.css">
+    <link rel="stylesheet" href="generated/style.css">
+    <link rel="stylesheet" href="generated/responsive.css">
+    <link rel="stylesheet" href="generated/hamburger.css">
+    
+</head>
+<body>
+    
+
+    <div class="wrapper" id="wrapper">
+
+        <header class="header" id="header">
+            <div class="menu" id="menu-button">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </header>
+
+
+        <nav>
+            <a class="nav-a" onclick="closeMenu()" href="#main"><img src="assets/home.svg">Home</a>
+            <a class="nav-a" onclick="closeMenu()" href="#about"><img src="assets/about.svg">About</a>
+            <a class="nav-a" onclick="closeMenu()" href="#work"><img src="assets/work.svg">Work</a>
+            <a class="nav-a" onclick="closeMenu()" href="#contact"><img src="assets/contact.svg">Contact</a>
+        </nav>
+
+        <!-- Hier kommt meine Seite hin -->
+        <main>   
+            <!-- fakePages -->
+            <div class="fake-page"></div>
+            <div class="fake-page"></div>
+            <div class="fake-page"></div>
+            <div class="fake-page"></div>
+
+
+            <div class="page">
+                <div class="content">
+
+                    <!-- HEADER -->
+                    <header class="header" id="header">
+                        <a onclick="window.location.reload()" class="logo">Vinzenz Geisler</a>
+                        <a onclick="window.location.reload()" class="logo2">VG</a>
+                    </header>
+
+                    <!-- main  -->
+                    <section id="main">
+                        <div class="home">
+                            <div class="profile-image">
+                                <img src="assets/favicon.svg" alt="Vinzenz" class="img-vinzenz">
+                            </div>
+                            <article class="intro-text">
+                                <p class="intro-hello">Hallo, mein Name ist Vinzenz Geisler.</p>
+                                <h1>Ich bin angehender Softwareentwickler.</h1>
+                                <p class="content">Akutell bin ich Schüler in der 11. Klasse. <br>
+                                Dazu arbeite ich als Praktikant in einem Softwareunternehmen.<br>
+                                Mit Freude programmiere ich.</p>
+                            </article>
+                        </div>
+                    </section>
+
+                    
+                    <!-- wave between home and work -->
+                    <div class="wave">
+                        <svg
+                            data-name="Wave 1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 1200 120"
+                            preserveAspectRatio="none"
+                            >
+                            <path
+                                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                                class="shape-fill"/>
+                        </svg>
+                    </div>
+
+                    <!-- work -->
+                    <section id="work">
+                        <div class="work">
+
+                        </div>
+                    </section>
+
+                    <!-- about -->
+                    <section id="about">
+                        <div class="about">
+                            <h1>Hallo, ich bin Vinzenz Geisler</h1>
+                            <p>
+                                Ich bin angehender Softwareentwickler aus Deutschland.
+                                Momentan mache ich meine Fachhochschulreife mit der Spezifikation Technik.
+                                Zu dem gehört ein halbjähriges Praktikum, welches ich in einem kleinem Softwareunternehmen tätige. <br>
+                                Da lerne ich die Grundlagen vom Prgrammieren und arbeite mit der Sprache Typescript.
+                                Ich plane in der Zukunft ein (Wirtschafts?) Informatikstudium
+                                und freue mich jetzt schon auf meinen kommenden Berufsweg in der Welt der Informatik.
+                                Schreiben Sie mir doch gerne bei Fragen!
+                                
+                            </p>
+                        </div>
+                    </section>
+
+
+                    <!-- contact -->
+                    <section id="contact">
+                        <div class="contact">
+                            <div class="contact-buttons">
+                                <a class="buttons" href="https://threema.id/SVHKN4ZJ" target=”_blank”><img src="assets/threema-logo_portrait.svg">Threema</a>
+                                <a class="buttons" href="mailto:kontakt@vinzenz-geisler.com"><img src="assets/mail-line.svg">Mail</a>
+                                <a class="buttons" href="https://www.linkedin.com/in/vinzenz-geisler-bb725a231/" target=”_blank”><img src="assets/linkedin-box-fill.svg">LinkedIn</a>
+                                <a class="buttons" href="https://github.com/dariakoz" target=”_blank”><img src="assets/github-fill.svg">Github</a>
+                            </div>
+                          </div>
+                    </section>
+
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="vanilla-tilt.js"></script> -->
+<script src="src/app.js"></script>
+</html>

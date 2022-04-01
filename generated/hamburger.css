@@ -1,69 +1,28 @@
-.div-about-menu .menu {
-  position: fixed;
-  top: 3rem;
-  right: 3rem;
-  z-index: 1000;
+header .menu {
+  display: inline-block;
+  margin-right: 0;
+  margin-top: 2rem;
   cursor: pointer;
-  display: block;
-  width: 45px;
-  height: 45px;
 }
-.div-about-menu .menu bun:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 12%;
-  background: white;
-  border-radius: 45px;
-  transition: all 0.5s cubic-bezier(0.5, 0.9, 0, 0.8);
-  top: 10%;
-  right: 0;
+header .bar1, header .bar2, header .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: var(--text);
+  margin: 6px 0;
+  transition: 0.2s;
 }
-.div-about-menu .menu bun:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 12%;
-  background: white;
-  border-radius: 45px;
-  transition: all 0.5s cubic-bezier(0.5, 0.9, 0, 0.8);
-  bottom: 10%;
-  left: 0;
+header .change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+  width: 38px;
 }
-.div-about-menu .menu bun burger {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  height: 45px;
-  width: 45px;
-}
-.div-about-menu .menu bun burger:before, .div-about-menu .menu bun burger:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 12%;
-  background: white;
-  border-radius: 45px;
-  transition: all 0.5s cubic-bezier(0.5, 0.9, 0, 0.8);
-}
-.div-about-menu .menu input {
-  display: block;
-  position: absolute;
+header .change .bar2 {
   opacity: 0;
-  z-index: 1;
-  width: 45px;
-  height: 45px;
-  cursor: pointer;
 }
-.div-about-menu .menu input:checked ~ bun:before, .div-about-menu .menu input:checked ~ bun:after {
-  width: 0;
-}
-.div-about-menu .menu input:checked ~ bun burger:before {
-  transform: rotate(135deg);
-}
-.div-about-menu .menu input:checked ~ bun burger:after {
-  transform: rotate(45deg);
-  box-shadow: 0 0 0 0 #595959;
+header .change .bar3 {
+  width: 38px;
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 
 /*# sourceMappingURL=hamburger.css.map */
