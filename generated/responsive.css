@@ -1,4 +1,4 @@
-@media (max-width: 780px) {
+@media (max-width: 820px) {
   .wrapper.active main {
     transform: translate3d(0, 50%, -120px);
   }
