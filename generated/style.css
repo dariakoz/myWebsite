@@ -3,70 +3,87 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Arial", monospace;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+}
 
 ::-webkit-scrollbar {
-  width: 0; }
+  width: 0;
+}
 
 @supports (scrollbar-color: red blue) {
   * {
-    scrollbar-width: transparent; } }
+    scrollbar-width: transparent;
+  }
+}
 :root {
   --text: #fff;
-  --text-inverse: $Color; }
+  --text-inverse: $Color;
+}
 
 body {
-  margin: 0; }
+  margin: 0;
+}
 
 header {
   position: fixed;
   width: 100%;
   height: 3.5rem;
   z-index: 1000;
-  padding: 0 2rem 0; }
-  header .logo {
-    padding-top: 1rem;
-    cursor: pointer;
-    color: var(--text);
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    display: flex;
-    justify-content: center; }
-  header .logo2 {
-    cursor: pointer;
-    display: none; }
+  padding: 0 2rem 0;
+}
+header .logo {
+  padding-top: 1rem;
+  cursor: pointer;
+  color: var(--text);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+}
+header .logo2 {
+  cursor: pointer;
+  display: none;
+}
 
 .home {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center; }
-  .home .profile-image {
-    overflow: hidden;
-    border-radius: 20rem;
-    width: 20rem;
-    height: 20rem; }
-    .home .profile-image .img-vinzenz {
-      width: 20rem; }
-  .home .intro-text {
-    color: white;
-    max-width: 45rem; }
-    .home .intro-text p {
-      font-size: 1.5rem; }
-      .home .intro-text p.intro-hello {
-        margin: 2rem 0 1rem 0; }
-      .home .intro-text p.content {
-        margin: 1rem 0 1rem 0;
-        line-height: 1.4em;
-        color: Grey; }
-    .home .intro-text h1 {
-      font-size: 2.5rem;
-      padding: 0;
-      margin: 0 O 1rem 0; }
+  align-items: center;
+}
+.home .profile-image {
+  overflow: hidden;
+  border-radius: 20rem;
+  width: 20rem;
+  height: 20rem;
+}
+.home .profile-image .img-vinzenz {
+  width: 20rem;
+}
+.home .intro-text {
+  color: white;
+  max-width: 45rem;
+}
+.home .intro-text p {
+  font-size: 1.5rem;
+}
+.home .intro-text p.intro-hello {
+  margin: 2rem 0 1rem 0;
+}
+.home .intro-text p.content {
+  margin: 1rem 0 1rem 0;
+  line-height: 1.4em;
+  color: Grey;
+}
+.home .intro-text h1 {
+  font-size: 2.5rem;
+  padding: 0;
+  margin: 0 O 1rem 0;
+}
 
 .wave {
   position: relative;
@@ -75,15 +92,18 @@ header {
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  transform: rotate(180deg); }
-  .wave svg {
-    position: relative;
-    display: block;
-    width: calc(104% + 1.3px);
-    height: 101px;
-    transform: rotateY(180deg); }
-  .wave .shape-fill {
-    fill: #f4f4f4; }
+  transform: rotate(180deg);
+}
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(104% + 1.3px);
+  height: 101px;
+  transform: rotateY(180deg);
+}
+.wave .shape-fill {
+  fill: #f4f4f4;
+}
 
 .work {
   display: flex;
@@ -92,90 +112,108 @@ header {
   background: #f4f4f4;
   min-height: 100vh;
   align-items: center;
-  justify-content: center; }
-  .work .work {
-    width: 1000px;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; }
-    .work .work .card {
-      position: relative; }
-      .work .work .card .face {
-        width: 300px;
-        height: 200px;
-        transition: .4s; }
-        .work .work .card .face .face1 {
-          position: relative;
-          background: #333;
-          display: flex;
-          justify-content: center;
-          align-content: center;
-          align-items: center;
-          z-index: 1;
-          transform: translateY(100px); }
-          .work .work .card .face .face1 .content {
-            opacity: .2;
-            transition: 0.5s;
-            text-align: center; }
-            .work .work .card .face .face1 .content i {
-              font-size: 3em;
-              color: white;
-              display: inline-block; }
-            .work .work .card .face .face1 .content h3 {
-              font-size: 1em;
-              color: white;
-              text-align: center; }
-            .work .work .card .face .face1 .content a {
-              transition: .5s; }
-        .work .work .card .face .face2 {
-          position: relative;
-          background: whitesmoke;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 20px;
-          box-sizing: border-box;
-          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-          transform: translateY(-100px); }
-          .work .work .card .face .face2 .content p {
-            font-size: 10pt;
-            margin: 0;
-            padding: 0;
-            color: #333; }
-          .work .work .card .face .face2 .content a {
-            font-size: 10pt;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            text-decoration: none;
-            color: black;
-            box-sizing: border-box;
-            outline: 1px dashed #333;
-            padding: 10px;
-            margin: 15px 0 0;
-            display: inline-block; }
-            .work .work .card .face .face2 .content a:hover {
-              background: #333;
-              color: whitesmoke;
-              box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5); }
-      .work .work .card:hover .face .face1 {
-        transform: translateY(0); }
-        .work .work .card:hover .face .face1 .content {
-          opacity: 1; }
-      .work .work .card:hover .face .face2 {
-        transform: translateY(0); }
+  justify-content: center;
+}
+.work .container {
+  width: 1000px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.work .container .card {
+  position: relative;
+}
+.work .container .card .face {
+  width: 300px;
+  height: 200px;
+  transition: 0.4s;
+}
+.work .container .card .face.face1 {
+  position: relative;
+  background: #5f0000;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+.work .container .card .face.face1 .content {
+  opacity: 0.5;
+  transition: 0.5s;
+  text-align: center;
+}
+.work .container .card .face.face1 .content i {
+  font-size: 3em;
+  color: white;
+  display: inline-block;
+}
+.work .container .card .face.face1 .content h3 {
+  font-size: 1em;
+  color: white;
+  text-align: center;
+}
+.work .container .card .face.face1 .content a {
+  transition: 0.5s;
+}
+.work .container .card .face.face2 {
+  position: relative;
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  transform: translateY(-100px);
+}
+.work .container .card .face.face2 .content p {
+  font-size: 10pt;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+.work .container .card .face.face2 .content a {
+  font-size: 10pt;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+  outline: 1px dashed black;
+  padding: 10px;
+  margin: 15px 0 0;
+  display: inline-block;
+}
+.work .container .card:hover .face.face1 {
+  transform: translateY(0);
+}
+.work .container .card:hover .face.face1 .content {
+  opacity: 1;
+}
+.work .container .card:hover .face.face2 {
+  transform: translateY(0);
+}
+.work .container .card:hover .face.face2 .content a:hover {
+  background: #681010;
+  color: whitesmoke;
+}
 
 .about {
   position: relative;
   padding: 130px 20vw;
   color: #fff;
-  height: 100vh; }
-  .about h1 {
-    font-size: 3.5vw;
-    margin-bottom: 2rem; }
-  .about p {
-    font-size: 1.9rem; }
+  height: 100vh;
+}
+.about h1 {
+  font-size: 3.5vw;
+  margin-bottom: 2rem;
+}
+.about p {
+  font-size: 1.9rem;
+}
 
 .contact {
   position: relative;
@@ -187,33 +225,38 @@ header {
   align-items: center;
   color: white;
   font-size: 2rem;
-  font-weight: bold; }
-  .contact .contact-buttons .buttons {
-    float: left;
-    width: 10rem;
-    height: 10rem;
-    background-color: #5f0000;
-    border-radius: 20%;
-    color: white;
-    padding: 2rem;
-    font-size: 1rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin: 2rem;
-    display: flex;
-    font-weight: bold;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s; }
-    .contact .contact-buttons .buttons:hover {
-      transform: translate(0, -1rem); }
-    .contact .contact-buttons .buttons:last-child {
-      margin-right: 0; }
-    .contact .contact-buttons .buttons img {
-      width: 3rem;
-      height: 3rem;
-      margin: 0 0 1rem 0;
-      transition: all 150ms; }
+  font-weight: bold;
+}
+.contact .contact-buttons .buttons {
+  float: left;
+  width: 10rem;
+  height: 10rem;
+  background-color: #5f0000;
+  border-radius: 20%;
+  color: white;
+  padding: 2rem;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 2rem;
+  display: flex;
+  font-weight: bold;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.contact .contact-buttons .buttons:hover {
+  transform: translate(0, -1rem);
+}
+.contact .contact-buttons .buttons:last-child {
+  margin-right: 0;
+}
+.contact .contact-buttons .buttons img {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 0 1rem 0;
+  transition: all 150ms;
+}
 
 /*# sourceMappingURL=style.css.map */
