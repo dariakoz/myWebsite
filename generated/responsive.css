@@ -54,6 +54,10 @@
     font-size: 2rem;
   }
 
+  .work .container {
+    justify-content: center;
+  }
+
   .about {
     position: relative;
     padding: 130px 10vw;
