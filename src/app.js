@@ -1,4 +1,3 @@
-
 const menuButton = document.querySelector('#menu-button');
 const wrapper = document.querySelector('#wrapper');
 
